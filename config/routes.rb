@@ -10,4 +10,10 @@ Rails.application.routes.draw do
   post "/attendees" => "attendees#create"
   patch "/attendees/:id" => "attendees#update"
   delete "/attendees/:id" => "attendees#destroy"
+
+  get "/registrations" => "registrations#index"
+  get "/registrations/:id" => "registrations#show"
+  post "/registrations" => "registrations#create"
+  patch "/registrations/:id" => "registrations#update"
+  delete "/registrations/:id" => "registrations#destroy"
 end
